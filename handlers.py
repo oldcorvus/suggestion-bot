@@ -100,7 +100,7 @@ def choosing_genre(update: Update, context: CallbackContext) -> int:
         db.conn.close()
         temp = "Type: " + user_data['kind'] + "         Genre:   " + user_data['Genre'] + "\n\n\n  "
         for x in items:
-            temp += " <b>" + str((x[5])) + "</b>" + "  ---  " + x[0] + "       " + "Genre:   " + x[
+            temp += " <b>" + str((x[5])) + "</b>" + "  ---  " + "       " + "Genre:   " + x[
                 1] + "  Votes: " + str(x[4]) + "\n\n"
             counter = counter + 1
             if counter == 25:
